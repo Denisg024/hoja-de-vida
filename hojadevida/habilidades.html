@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades - Denis Andrea</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Denis Andrea Gomez Vanegas</h1>
+        <h2>Ingeniera de software (Estudiante)</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre mí</a></li>
+                <li><a href="experiencia.html">Experiencia</a></li>
+                <li><a href="educacion.html">Educación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h3>Habilidades</h3>
+            <h4>Habilidades Técnicas</h4>
+            <canvas id="skillsChart" width="400" height="200"></canvas>
+            <script>
+                const ctx = document.getElementById('skillsChart').getContext('2d');
+                const skillsChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['php', 'java', 'HTML/CSS', 'bases de datos', 'pruebas de software'],
+                        datasets: [{
+                            label: 'Nivel de Habilidad',
+                            data: [50, 80, 90, 70, 85],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255, 99, 132, 1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
+        </section>
+
+        <section>
+            <h4>Habilidades Blandas</h4>
+            <ul>
+                <li>Comunicación efectiva</li>
+                <li>Trabajo en equipo</li>
+                <li>Creatividad</li>
+                <li>Resolución de problemas</li>
+                <li>Adaptabilidad</li>
+            </ul>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 [Denis Andrea Gomez]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

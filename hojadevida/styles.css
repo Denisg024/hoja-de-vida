@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+    font-family: 'perpetua', serif;
+    font-size: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.perfil {
+    width: 150px;
+    border-radius: 20%;
+}
+.tex{
+    font-family: 'Arial', sans-serif; /* Cambia 'Arial' por el tipo de letra que prefieras */
+    font-size: 20px; /* Cambia el tamaño de la fuente según tus preferencias */
+    line-height: 1.5; /* Mejora la legibilidad del texto */
+    color: #333; /* Cambia el color del texto si lo deseas */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
